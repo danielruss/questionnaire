@@ -1,0 +1,26 @@
+[QUESTION_1] How do you feel today?
+(1)  Good  -> END
+(2) I’ve felt better
+
+
+[QUESTION_2] Have you had any of the following symptoms?
+[13] runny nose -> DECON1
+[14] headache  -> PAIN_REL1
+[15] fever -> TEMP
+< -> END >
+
+[DECON1]  Are you taking a decongestant?
+(1) Yes -> DECON2
+(0) No
+
+[DECON2]  What brand of decongestant are you using? |__|
+
+[PAIN_REL1] Are you taking Tylenol?
+(1) Yes -> PAIN_REL2
+(0) No
+[PAIN_REL2] How many milligrams of Tylenol are you taking?
+|__|__| mg 
+
+[TEMP] What is your temperature in degrees
+|__|__|min=90 max=120|&deg;
+
