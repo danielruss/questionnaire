@@ -24,3 +24,5 @@
 [TEMP] What is your temperature in degrees
 |__|__|min=90 max=120|&deg;
 
+
+[END] Thank you for taking the time to respond to this survey.
